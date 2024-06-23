@@ -1,0 +1,14 @@
+Interessado: Quem está pedindo o empréstimo (por exemplo, um município).
+UF: A sigla do estado (por exemplo, MG para Minas Gerais).
+Tipo de Interessado: Se é um município ou um estado.
+Tipo de Operação: Tipo de empréstimo (por exemplo, empréstimo interno).
+Finalidade: Para que o dinheiro será usado (por exemplo, para projetos em várias áreas).
+Tipo de Credor: O tipo de instituição que está emprestando o dinheiro (por exemplo, um banco).
+Credor: O nome do banco ou instituição financeira.
+Moeda: Em que moeda o empréstimo foi feito (por exemplo, Reais).
+Valor: Quanto dinheiro está sendo pedido.
+Número do Processo/PVL: Um número único que identifica o pedido.
+Código IBGE: Um número que identifica oficialmente o município ou estado.
+Status: A situação do pedido (por exemplo, se foi aprovado).
+Data: Quando o status foi atualizado.
+Analisado: Quem analisou o pedido (por exemplo, um banco ou órgão do governo).

@@ -107,9 +107,20 @@ Base_Credito.UF.value_counts(normalize=True)
 #%% Concentração Região
 Base_Credito.Região.value_counts(normalize=True)
 
-
 #%% Tipo de interessado
 Base_Credito.Tipo_de_interessado.value_counts()
 
 #%% Finalidade
 Base_Credito.Finalidade.value_counts()
+
+#%% Análise crédito Pernambuco nos anos de 2020 a 2024
+fitlro_pe = (Base_Credito['UF'] == 'PE') & (Base_Credito['Ano'] > 2020) #importante criar o filtro, para facilitar nas buscas
+Base_Credito.loc[fitlro_pe].Finalidade.value_counts()
+
+#%% Finalidade do emprestimo por região
+Base_Credito.groupby('UF').Finalidade.value_counts().head(10)
+
+
+#%% Credor do emprestimo
+
+Base_Credito.Credor.value_counts(normalize=True).head(10)
