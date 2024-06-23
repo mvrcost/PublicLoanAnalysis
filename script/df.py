@@ -124,3 +124,18 @@ Base_Credito.groupby('UF').Finalidade.value_counts().head(10)
 #%% Credor do emprestimo
 
 Base_Credito.Credor.value_counts(normalize=True).head(10)
+
+#%%Filtros Status
+Filtro_Status = [ 'Deferido', 'Deferido (PVL-IF)', 'Regularizado' ]
+
+Base_Concesao = Base_Credito.loc[ Base_Credito.Status.isin( Filtro_Status ) ]
+Base_Concesao.shape
+# %% Entender Por UF:Quantidade de emprestimos, Total Liberado, Ticker médio
+
+Anl_1 = Base_Concesao[ (Base_Concesao.Tipo_de_interessado == 'Estado') & ( Base_Concesao.Ano >= 2014 ) ].groupby( by=['Região', 'Interessado'] ).agg(
+    Quantidade = ('Interessado', 'count'),
+    Total_Liberado = ('Valor', 'sum'),
+    Ticket_Medio = ('Valor', 'median')
+).reset_index()
+
+Anl_1
