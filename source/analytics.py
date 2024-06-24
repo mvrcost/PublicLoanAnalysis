@@ -139,3 +139,22 @@ Anl_1 = Base_Concesao[ (Base_Concesao.Tipo_de_interessado == 'Estado') & ( Base_
 ).reset_index()
 
 Anl_1
+
+
+#%%----------------GRÁFICOS---------------
+# Definindo a paleta de cores
+Paleta = ['#183FFE', '#00D100', '#FFD000','#FE0002', '#f5f5f5']
+sns.palplot( Paleta )
+plt.title('Ministério da Fazenda - paleta de cores', loc='left',fontfamily='serif',fontsize=15, y=1.2)
+#%%
+
+Anl_Emprestimo = Base_Concesao.groupby('Ano').agg(Sum = ('Valor', 'sum'))/10 ** 9
+
+Anl_Emprestimo.index
+Anl_Emprestimo.sum
+
+
+#%%
+plt.figure( figsize=(12, 5) )
+plt.title('Gráfico de barra')
+plt.bar( Anl_Emprestimo.index, Anl_Emprestimo.Sum)
