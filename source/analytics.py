@@ -157,4 +157,4 @@ Anl_Emprestimo.sum
 #%%
 plt.figure( figsize=(12, 5) )
 plt.title('Gráfico de barra')
-plt.bar( Anl_Emprestimo.index, Anl_Emprestimo.Sum)
+plt.bar( Anl_Emprestimo.index, Anl_Emprestimo.Sum, color=Paleta )
