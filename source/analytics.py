@@ -222,7 +222,7 @@ fig.text(
     0.09, -0.1,
     '''
     Considerando a tendência de crescimento observada nos últimos anos,
-    há uma perspectiva de que o volume de pedidos de empréstimo para o ano de 2024 não ultrapasse o registrado em 2018,
+    há uma perspectiva de que o volume de pedidos de empréstimo para o ano de 2024 não ultrapasse o registrado em 2018 ,
     que foi o maior da série histórica até o momento
     ''',
     fontsize=10, fontweight='light', fontfamily='serif'
