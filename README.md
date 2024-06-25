@@ -11,6 +11,10 @@ Este projeto de análise de dados tem como objetivo explorar e identificar padr�
 3. Analisar padrões de empréstimos ao longo do tempo.
 4. Explorar correlações entre diferentes variáveis presentes na base de dados.
 
+
+![graph](https://github.com/mvrcost/PublicLoanAnalysis/assets/131052793/571bb483-5996-471f-b377-2bd35e874fed)
+
+
 ## Estrutura do Projeto
 
 1. **Introdução**: Apresentação do contexto e dos objetivos do projeto.
